@@ -5,7 +5,7 @@ import android.util.Log
 
 class KoferEditor(private val editor: SharedPreferences.Editor) {
 
-    public fun put(key: String, value: Any, isPrintLog: Boolean) {
+    public fun put(key: String, value: Any, isPrintLog: Boolean = false) {
         if (isPrintLog) {
             Log.d("TAG", value.toString())
         }
